@@ -1,0 +1,54 @@
+.loader {
+    border: 8px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 8px solid #27b327;
+    width: 22px;
+    height: 22px;
+    -webkit-animation: spin 1s linear infinite;
+    /* Safari */
+    animation: spin 1s linear infinite;
+}
+
+.alert{
+    padding: 10px;
+    background: lightgray;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin: 5px 10px;
+    p{
+        text-align: center !important;
+    }
+}
+
+.pas{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+.fail{
+    color: #da2232;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

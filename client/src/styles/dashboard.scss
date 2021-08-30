@@ -1,0 +1,227 @@
+.dashboard-container{
+    header{
+        text-align: center;
+        box-shadow: 0px 0px 3px;
+        font-size: 20px;
+        padding: 10px;
+        img{
+           width: 35px;
+           margin-bottom: -8px;
+        }
+    }
+    .dashboard-body{
+        width: 60%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 30px;
+        .cards-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 5px 10%;
+            .card{
+                &:hover{
+                 cursor: pointer;
+                 opacity: .7;
+                }
+                box-shadow:  0px 0px 4px grey;
+                border-radius: 25px;
+                padding: 1px 15px;
+                margin: 10px;
+                margin-bottom: 0px;
+                .title{
+                  font-size: 17px;
+                }
+                .text{
+                   padding: 5px;
+                }
+            }
+
+
+            .card-green{
+                background: #32cd32;
+            }
+            .card-yellow{
+                background:  #fcf75e;
+            }
+
+            .bor{
+                border: 5px dashed #f98a4780;
+            }
+            
+        }
+        .buttons{
+            .prev{
+                background: white;
+                border: none;
+                color: #04a204;
+                border: 1px solid #04a204;
+                margin: 0 10px;
+                padding: 4px 9px;
+                font-size: 11px;
+                border-radius: 5px;     
+                &:hover{
+                    background: #04a204;
+                    color: white;
+                    cursor: pointer;
+                }           
+            }
+            .next{
+                padding: 5px 19px;
+            }
+        }
+        .btn-parent{
+              text-align: left;
+              margin-top: 5px;
+        }
+
+        a{
+            text-decoration: underline;
+            color: #4f2aa9;
+            margin-top: 0px;
+            
+        }
+    }
+    .miw-dashboard{
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 25px 10px;
+        div{
+            border-bottom: 2px solid gray;
+            font-size: 50px;
+            padding-bottom: 15px;
+            width: 60%;
+            margin: 90px auto;
+            margin-bottom: 0;
+            input{
+                font-size: 40px;
+                width: 96%;
+                text-align: center;
+                border: none;
+                outline: none;
+            }
+        }
+        p{
+            font-size: 28px;        
+            font-weight: 200;
+            margin: 0px;
+        }
+        button{
+            margin-top: 50px;
+            padding: 10px 30px;
+            font-size: 20px;
+            border-color: black;
+            border-radius: 10px;
+            background: #9efd38;
+            &:hover{
+                opacity: .7;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .dashboard-container{
+    .dashboard-body{
+        // padding: 0px;
+        width: 70% ;
+        .cards-container {
+            .card{
+
+                .title{
+                  font-size: 17px;
+                }
+                .text{
+                   font-size: 12px;
+                }
+            }
+            
+        }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dashboard-container{
+    header{
+        font-size: 15px;
+        padding: 7px;
+        img{
+          width: 24px;
+        }
+    }
+    .dashboard-body{
+        padding: 0px;
+        width: 100% ;
+        .cards-container {
+            grid-template-columns: auto auto;
+            margin: 5px;
+            margin-top: 0;
+            padding-top: 0;
+            .card{  
+                min-height: 90px;
+                .title{
+                  font-size: 14px;
+                  margin: 0;
+                }
+                .text{
+                   font-size: 8.5px;
+                }
+            }
+        }
+        .score{
+          font-size: 17px;
+        }
+
+        .link1{
+            font-size: 13px;
+            margin-bottom: -6px;
+        }
+        .link2{
+            font-size: 13px;
+        }
+        .buttons{
+            margin: 0px;
+        }
+        .btn-parent{
+            text-align: left;
+            margin-top: 5px;
+            .log{
+                padding: 4px 5px;
+                font-size: 9px;
+            }
+      }
+    }
+
+    .miw-dashboard{
+        width: 90%;
+        div{
+            width: 60%;
+        }
+        p{
+            font-size: 20px;        
+        }
+        button{
+            font-size: 17px;
+        }
+      }
+  }
+  
+}
+
+
+@media only screen and (max-width: 350px) {
+    .dashboard-container{
+     
+    header{
+        font-size: 15px;
+        padding: 7px;
+        padding-top: 0px;
+        img{
+           width: 33px;
+        }
+    }
+}
+}

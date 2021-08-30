@@ -1,0 +1,73 @@
+// @import "../styles/dashboard.scss";
+
+.login-container {
+    // background: red;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    form{
+        width: 50%;
+        margin-top: -100px;
+        justify-content: center;
+        padding: 32px 15px;
+        border: 1px solid lightgray;
+        display: flex;
+        flex-direction: column;
+        .username{
+            padding: 11px 5px;
+            margin: 4px 10px;
+            border: 1px solid lightgray;
+            border-radius: 2px;
+            outline-color: dodgerblue;
+        }
+        input[type=submit]{
+            padding: 10px 5px;
+            margin-top: 10px;
+            background: #27b327;
+            color: white;
+            font-size: 15px;
+            &:hover{
+                cursor: pointer;
+                opacity: .8;
+            }
+        }
+        img{
+            height: 90px;
+            width: 90px;
+            margin: 0 auto;
+            border-radius: 50%;
+            margin-bottom: 30px;
+        }
+        p{
+           margin: 5px 10px;
+           text-align: right;
+        }
+        .link{
+            color: #08bf08;
+        }
+    }
+}
+
+.app-container{
+//   background: green;
+  height: 100vh;
+}
+
+@media (min-width:900px) {
+    .login-container{
+        form{
+            width: 30%;
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .login-container{
+        form{
+            width: 90%;
+            border: none;
+        }
+    }
+}
